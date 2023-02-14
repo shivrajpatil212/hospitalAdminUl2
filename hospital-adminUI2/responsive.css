@@ -1,0 +1,138 @@
+@media screen and (min-width: 320px) and (max-width: 720px){
+
+    .container{
+        width: 98%;
+    }
+    #sideBar{
+        /* display: none;  */
+        position: fixed;
+        top: 0;
+        left: -300px;
+        height: 100vh;
+        width: 300px;
+        transition: 0.3s;
+        z-index: 10;
+    }
+    #sideBar.active{
+        left: 0px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    #mobile i{
+       color: #1a1a1a;
+       font-size: 24px;
+       padding-left: 20px;
+       position: absolute;
+       top: 27px;
+       right: 130px;
+       z-index: 9;
+    }
+    #close{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    .logo-img{
+        width: 70%;
+    }
+
+    .sec-head{
+        display: block;
+    }
+
+    .profile-lift{
+        z-index: 0;
+    }
+
+
+    .patient-progress, .visit-country{
+        margin-left: 0;
+    }
+
+    .graph{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (min-width: 721px) and (max-width: 1199px){
+
+    #sideBar{
+        /* display: none;  */
+        position: fixed;
+        top: 0;
+        left: -600px;
+        height: 100vh;
+        width: 600px;
+        transition: 0.3s;
+        z-index: 10;
+    }
+    #sideBar.active{
+        left: 0px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+       color: #1a1a1a;
+       font-size: 24px;
+       padding-left: 20px;
+       position: absolute;
+       top: 48px;
+       right: 100px;
+       z-index: 9;
+    }
+    #close{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    .logo-img{
+        width: 70%;
+    }
+
+    #close{
+        font-size: 44px;
+    }
+    #mobile{
+        position: relative;
+    }
+    #mobile i{
+        font-size: 34px;
+       position: absolute;
+       top: 23px;
+       right: 120px;
+    }
+
+    .highcharts-figure{
+        margin-top: 30px;
+    }
+    .patient-progress, .visit-country{
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px){
+    #mobile{
+        position: relative;
+    }
+    #mobile i{
+        font-size: 34px;
+       position: absolute;
+       top: 25px;
+       right: -18px;
+    }
+    
+}

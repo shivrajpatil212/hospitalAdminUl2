@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- google font cdn start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- google font cdn end -->
+
+    <!-- bootstarp css cdn start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- bootstarp css cdn end -->
+
+    <!-- table jquery start -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+    </style>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- table jquery end -->
+
+
+    <!-- font-awesome cdn start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- font-awesome cdn end -->
+
+
+    <!-- coustom css start -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- coustom css end -->
+
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <section class="container">
+        <div class="row">
+
+            <!-- side-bar Started -->
+            <aside id="sideBar" class="side-bar col-xl-3">
+                <!-- <div class="container"> -->
+                <div class="logo-img">
+                    <img src="./images/IKSHealth_logo.png" class="img-fluid" alt="logo-img">
+                </div>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <!-- </div> -->
+                <div class="dashboard-side">
+                    <h5>Dashboard</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-user-doctor"></i>&nbsp; Doctor Dashboard</a></li>
+                        <li><a href="#"><i class="fa-solid fa-hospital"></i>&nbsp; Hospital Dashboard</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bed"></i>&nbsp; Patient Dashboard</a></li>
+                        <li><a href="#"><i class="fa-solid fa-virus"></i>&nbsp; Covide-19 Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="dashboard-side">
+                    <h5>Apps</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i>&nbsp; Email</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user-doctor"></i>&nbsp; Doctors</a></li>
+                        <li><a href="#"><i class="fa-solid fa-calendar-days"></i>&nbsp; Calender</a></li>
+                        <li><a href="#"><i class="fa-regular fa-comment"></i>&nbsp; Chat</a></li>
+                    </ul>
+                </div>
+                <div class="dashboard-side">
+                    <h5>Components</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-paste"></i>&nbsp; Forms</a></li>
+                        <li><a href="#"><i class="fa-solid fa-table"></i>&nbsp; Table</a></li>
+                        <li><a href="#"><i class="fa-regular fa-comment"></i>&nbsp; Chats</a></li>
+                        <li><a href="#"><i class="fa-solid fa-compact-disc"></i>&nbsp; Icons</a></li>
+                    </ul>
+                </div>
+                <div class="dashboard-side">
+                    <h5>Pages</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-clipboard"></i>&nbsp; Authentication</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i>&nbsp; Maps</a></li>
+                        <li><a href="#"><i class="fa-regular fa-file"></i>&nbsp; Extra Pages</a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-up"></i>&nbsp; Menu Level</a></li>
+                    </ul>
+                </div>
+                <div class="hospital-img">
+                    <img src="./images/hospital-management2.png" class="img-fluid management-img" alt="">
+                </div>
+            </aside>
+            <div id="mobile">
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+            <!-- side-bar end -->
+
+            <div class="col-xl-9">
+                <div class="container">
+
+                    <!-- Header Started -->
+                    <div class="header">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">
+                                    <img src="./images/profile2.png" alt="Logo" width="30" height="24"
+                                        class="d-inline-block align-text-top">
+                                    Bini Jets
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#"><i
+                                                    class="fa-solid fa-house-user"></i> Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i>
+                                                Notification</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa-solid fa-envelope-open"></i>
+                                                Message</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                English
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">French</a></li>
+                                                <li><a class="dropdown-item" href="#">German</a></li>
+                                                <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                                <li><a class="dropdown-item" href="#">Japanese</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- header end -->
+
+                    <!-- small div started -->
+                    <div class="sec conatiner">
+                        <div class="row">
+                            <div class="sec-head ">
+                                <div class="small-div col-xl-3 	col-md-3">
+                                    <p>10 Feb, 2020</p>
+                                    <h3>Hypertensive Crisis</h3>
+                                    <p>Ongoing treatment</p>
+                                </div>
+                                <div class="small-div col-xl-3 col-md-3">
+                                    <p>12 Jan, 2020</p>
+                                    <h3>Osteoporosis</h3>
+                                    <p>Incurable</p>
+                                </div>
+                                <div class="small-div col-xl-3 col-md-3">
+                                    <p>15 Feb, 2020</p>
+                                    <h3>Hypertensive Crisis</h3>
+                                    <p>Examination</p>
+                                </div>
+                                <div class="small-div col-xl-3 col-md-3">
+                                    <img src="./images/wheelchair-img.avif" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- small div end -->
+
+                    <!-- Health Care start -->
+
+                    <div class="container">
+                        <div class="health-care">
+                            <div class="row">
+                                <div class="col-xl-4 col-md-6 col-lg-6">
+                                    <div class="doctor-list">
+                                        <h3>Doctors Lists</h3>
+
+
+                                        <div class="doctor-list2" id="doctor-list2" onclick="myfunc()">
+                                            <div class="doctor-details">
+                                                <img src="./images/profile2.png" class="img-fluid list-img" alt="">
+                                                <div class="doctor-name" id="doctor-name" value="Dr.Paul Molive">Dr. Paul Molive</div>
+
+                                                <div id="doc-mob" class="d-none" value="023-42517687">023-42517687</div>
+                                                <div id="doc-operation" class="d-none" value="123">123</div>
+                                                <div id="doc-suc" class="d-none" value="95%">95%</div>
+                                                <div id="doc-add" class="d-none" value="new-york">new-york</div>
+                                            </div>
+                                            <div class="doctor-deg" id="doctor-deg" value="MBBS, MD">MBBS, MD</div>
+                                        </div>
+                                        <div class="doctor-list2">
+                                            <div class="doctor-details">
+                                                <img src="./images/profile2.png" class="img-fluid list-img" alt="">
+                                                <div class="doctor-name">Dr. Barb Dwyer</div>
+                                            </div>
+                                            <div class="doctor-deg">MD</div>
+                                        </div>
+                                        <div class="doctor-list2">
+                                            <div class="doctor-details">
+                                                <img src="./images/profile2.png" class="img-fluid list-img" alt="">
+                                                <div class="doctor-name">Dr. Terry Aki</div>
+                                            </div>
+                                            <div class="doctor-deg">MBBS</div>
+                                        </div>
+                                        <div class="doctor-list2">
+                                            <div class="doctor-details">
+                                                <img src="./images/profile2.png" class="img-fluid list-img" alt="">
+                                                <div class="doctor-name">Dr. Robin Banks</div>
+                                            </div>
+                                            <div class="doctor-deg">MBBS, MD</div>
+                                        </div>
+                                        <div class="doctor-list2">
+                                            <div class="doctor-details">
+                                                <img src="./images/profile2.png" class="img-fluid list-img" alt="">
+                                                <div class="doctor-name">Dr. Barry Wine</div>
+                                            </div>
+                                            <div class="doctor-deg">BAMS</div>
+                                        </div>
+
+                                        <button class="btn btn-outline-success" type="submit">View All Doctor</button>
+
+                                    </div>
+                                    <!-- The Modal -->
+                                    <div id="myModal" class="modal">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <div><h3>Name: <span id="doctor-card"></span></h3></div>
+                                            <div><h3>Degree: <span id="doc-deg"></span></h3></div>
+                                            <div><h3>mobile No: <span id="doc-mobile"></span></h3></div>
+                                            <div><h3>Operation NO: <span id="doc-oper"></span></h3></div>
+                                            <div><h3>Sucess rate: <span id="doc-succ"></span></h3></div>
+                                            <div><h3>Address: <span id="doc-address"></span></h3></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="graph col-xl-8 col-md-6 col-lg-6">
+                                    <!-- <div class="container"> -->
+                                    <canvas id="myChart"></canvas>
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Health Care end -->
+
+                    <!-- calender section start -->
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6 col-lg-4">
+                                <div class="patient-progress">
+                                    <h3>Patient Progress</h3>
+                                    <hr>
+                                    <div class="patient-name">
+                                        <h5>Bud Jet</h5> <span>30%</span>
+                                    </div>
+                                    <div class="patient-name">
+                                        <h5>Barney Cull</h5> <span>70%</span>
+                                    </div>
+                                    <div class="patient-name">
+                                        <h5>Eric Shun</h5> <span>15%</span>
+                                    </div>
+                                    <div class="patient-name">
+                                        <h5>Rick Shaw</h5> <span>55%</span>
+                                    </div>
+                                    <div class="patient-name">
+                                        <h5>Ben Effit</h5> <span>45%</span>
+                                    </div>
+                                    <div class="patient-name">
+                                        <h5>Marge Arita</h5> <span>65%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6 col-lg-4">
+                                <div class="highcharts-figure">
+                                    <div id="pie-chart"></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="visit-country">
+                                    <h3>Visits From Countries</h3>
+                                    <hr>
+                                    <div class="country">
+                                        <div class="country-name">
+                                            <h5>United States</h5> <span>95%</span>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Success example"
+                                            style="height: 15px" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar bg-success" style="width: 95%">United States</div>
+                                        </div>
+                                    </div>
+                                    <div class="country">
+                                        <div class="country-name">
+                                            <h5>India</h5> <span>75%</span>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Info example"
+                                            style="height: 15px" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar bg-info" style="width: 75%">India</div>
+                                        </div>
+                                    </div>
+                                    <div class="country">
+                                        <div class="country-name">
+                                            <h5>Australia</h5> <span>55%</span>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Warning example"
+                                            style="height: 15px" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar bg-warning" style="width: 55%">Australia</div>
+                                        </div>
+                                    </div>
+                                    <div class="country">
+                                        <div class="country-name">
+                                            <h5>Brazil</h5> <span>25%</span>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Danger example"
+                                            style="height: 15px" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-bar bg-danger" style="width: 25%">Brazil</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- calender section end -->
+
+                    <!-- table and list start -->
+
+                    <div class="container">
+                        <!-- <div class="row"> -->
+                        <!-- <div class="col-xl-8 col-lg-8"> -->
+                        <div class="appointment-table">
+                            <h3>New Appointments</h3>
+                            <hr>
+                            <table id="myTable" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Patient</th>
+                                        <th scope="col">Doctor</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Timing</th>
+                                        <th scope="col">Contact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Petey Cruise</th>
+                                        <td>Dr.Monty Carlo</td>
+                                        <td>20/02/2020</td>
+                                        <td>8:00 AM</td>
+                                        <td>+1-202-555-0146</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Anna Sthesia</th>
+                                        <td>Dr.Pete Sariya</td>
+                                        <td>25/02/2020</td>
+                                        <td>8:00 AM</td>
+                                        <td>+1-202-555-0146</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Paul Molive</th>
+                                        <td>Dr.Brock Lee</td>
+                                        <td>20/02/2020</td>
+                                        <td>9:45 AM</td>
+                                        <td>+1-202-555-0153</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Anna Mull</th>
+                                        <td>Dr.Barb Ackue</td>
+                                        <td>27/02/2020</td>
+                                        <td>11:30 AM</td>
+                                        <td>+1-202-555-0146</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Paige Turner</th>
+                                        <td>Dr.Walter Melon</td>
+                                        <td>28/02/2020</td>
+                                        <td>3:30 PM</td>
+                                        <td>+1-202-555-0101</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Don Stairs</th>
+                                        <td>Dr.Arty Ficial</td>
+                                        <td>29/02/2020</td>
+                                        <td>4:30 PM</td>
+                                        <td>+1-202-555-0176</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Petey Cruise</th>
+                                        <td>Dr.Monty Carlo</td>
+                                        <td>20/02/2020</td>
+                                        <td>8:00 AM</td>
+                                        <td>+1-202-555-0146</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Anna Sthesia</th>
+                                        <td>Dr.Pete Sariya</td>
+                                        <td>25/02/2020</td>
+                                        <td>8:00 AM</td>
+                                        <td>+1-202-555-0146</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Paige Turner</th>
+                                        <td>Dr.Walter Melon</td>
+                                        <td>28/02/2020</td>
+                                        <td>3:30 PM</td>
+                                        <td>+1-202-555-0101</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Anna Mull</th>
+                                        <td>Dr.Barb Ackue</td>
+                                        <td>27/02/2020</td>
+                                        <td>11:30 AM</td>
+                                        <td>+1-202-555-0146</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Anna Mull</th>
+                                        <td>Dr.Barb Ackue</td>
+                                        <td>27/02/2020</td>
+                                        <td>11:30 AM</td>
+                                        <td>+1-202-555-0146</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Paige Turner</th>
+                                        <td>Dr.Walter Melon</td>
+                                        <td>28/02/2020</td>
+                                        <td>3:30 PM</td>
+                                        <td>+1-202-555-0101</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- </div> -->
+
+                        <!-- </div> -->
+                    </div>
+
+                    <!-- table and list end -->
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="container">
+                <div class="footer">
+                    <div class="policy">
+                        <p>Privacy Policy</p>
+                        <p>Terms of Use</p>
+                    </div>
+                    <div class="copyright">
+                        <p>@Copyright 2020 <span>Shiv</span> All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div> -->
+    </section>
+
+    <!-- <div class="container">
+        <div class="footer">
+            <div class="policy">
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+            </div>
+            <div class="copyright">
+                <p>@Copyright 2020 <span>Shiv</span> All Rights Reserved.</p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- bootstrap js cdn start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <!-- bootstrap js cdn end -->
+
+    <!-- chart js cdn start -->
+
+    <!-- chart js cdn end -->
+
+
+    <!-- high-chart js cdn start -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <!-- high-chart js cdn end -->
+
+    <!-- coustom js file start -->
+    <script src="./script.js"></script>
+    <!-- coustom js file end -->
+
+
+</body>
+
+</html>

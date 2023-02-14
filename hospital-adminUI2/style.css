@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccf6b0 !important;
+    margin-top: 20px !important;
+    /* overflow-x: hidden; */
+}
+
+ul *{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+.side-bar{
+    /* border: solid; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+}
+
+
+/* side-bar css start */
+.logo-img{
+    text-align: center;
+}
+
+.side-bar{
+    background-color: #adf66e;
+}
+
+.dashboard-side h5{
+    color: #004B23;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;    
+}
+
+.dashboard-side li a{
+    margin-top: 10px;
+    color: #268c55;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.dashboard-side li{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.dashboard-side ul, .doctor-list ul{
+    padding-left: 0px;
+}
+
+.hospital-img{
+    /* border: solid; */
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.management-img{
+    /* border: solid; */
+    border-radius: 20px;
+}
+
+/* header css start */
+.header{
+    margin-bottom: 20px;
+    
+}
+.navbar{
+    background:#F0F0E9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+.navbar-brand{
+    margin-right: 5px !important;
+}
+#navbarSupportedContent a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #696763;
+}
+#navbarSupportedContent a:hover, .dashboard-side li a:hover {
+    color: #E67F25;
+}
+form input{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid #e1e1e1;
+}
+form .btn , .profile-card .btn{
+    background-color: #FE980F;
+    color: #eee;
+    border: none;
+    height: 40px;
+}
+
+
+/* small-div start */
+.small-div{
+    background-color: #e9f8e1;
+    border-radius: 15px;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.small-div p, .profile-card p{
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #696763;
+}
+.small-div h3 , .profile-card h3{
+    color: #303030;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.sec-head{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-grow: inherit;
+}
+.col-xl-12{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.sec{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* profile card start */
+.health-care{
+    /* border: solid; */
+}
+.profile-card{
+    border-radius: 30px;
+    margin-top: 100px;
+    text-align: center;
+    /* background-color:  #F0F0E9; */
+    background-color: #e9f8e1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.profile-img{
+    width: 40%;
+    border-radius: 50%;
+}
+.doctor-data{
+    display: flex;
+    justify-content: center;
+}
+.operation{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.rate{
+    border-left: 1px solid #696763;
+}
+.operation p{
+    padding-top: 0px;
+}
+.profile-lift{
+    position: relative;
+    bottom: 57px;
+}
+
+
+
+/* chart js graph start */
+.graph{
+    /* border: solid; */
+    background-color: #e9f8e1;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);  
+}
+
+#myChart{
+    /* border: dotted; */
+    width: 100%;
+    height: 100% !important;
+}
+
+/* chart js graph end */
+
+
+
+/* appointment table start */
+
+.appointment-table{
+    border-radius: 30px;
+    margin-top: 30px;
+    text-align: center;
+    background-color:  #e9f8e1;
+    /* max-width: 100%; */
+    /* width: 80%; */
+}
+.appointment-table{
+    overflow-x: auto;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.appointment-table h3, .visit-country h3, .patient-progress h3{
+    color: #303030;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.table thead th{
+    padding-bottom: 20px;
+}
+/* .table tbody td{
+    padding-left: 15px;
+    padding-right: 15px;
+} */
+
+/* appointment table end */
+
+/* doctor list start */
+.doctor-list h3{
+    color: #303030;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.doctor-list{
+    border-radius: 30px;
+    /* margin-top: 30px; */
+    text-align: center;
+    background-color:  #e9f8e1;
+}
+.doctor-list2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.doctor-name{
+    margin-left: 10px;
+}
+.doctor-details{
+    display: flex;
+    align-items: center;
+}
+
+.list-img{
+    width: 10%;
+    border-radius: 50%;
+}
+
+.doctor-list li{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.doctor-list .btn{
+    background-color: #FE980F;
+    color: #eee;
+    border: none;
+    height: 40px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+/* .doctor-list{
+    border: solid;
+    text-align: center;
+} */
+
+/* doctor list end */
+
+/* pie-chart start */
+
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 320px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+#pie-chart {
+  /* height: 400px; */
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  /* background: #f8f8f8; */
+  background: #e9f8e1;
+}
+
+.highcharts-data-table tr:hover {
+  /* background: #f1f7ff; */
+  background: #e9f8e1;
+}
+
+/* pie-chart end */
+
+/* country list start */
+
+.visit-country, .patient-progress{
+    /* border: solid; */
+    background-color:  #e9f8e1;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-left: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.country-name, .patient-name{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+/* country list end */
+
+/* patient progress start */
+
+.patient-name span{
+    border: solid;
+    border-radius: 30%;
+    background-color: #ff008c;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* patient progress end */
+
+/* footer start */
+
+.footer{
+    display: flex;
+    justify-content: space-between;      
+    background-color:  #F0F0E9;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* max-width: 100%; */
+}
+.footer p{
+    font-size: 15px;
+    font-weight: 600;
+    color:  #303030;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}
+.copyright span{
+    color: #268c55;
+}
+.policy{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* footer end */
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+
+
+/* modal box start */
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content h3{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.modal-content span{
+    font-size: 20px;
+    font-weight: 400;
+    color: orangered;
+}
+/* modal box end */
